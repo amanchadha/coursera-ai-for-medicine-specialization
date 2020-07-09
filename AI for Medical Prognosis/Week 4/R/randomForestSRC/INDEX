@@ -1,0 +1,43 @@
+breast                  Wisconsin Prognostic Breast Cancer Data
+find.interaction.rfsrc
+                        Find Interactions Between Pairs of Variables
+follic                  Follicular Cell Lymphoma
+hd                      Hodgkin's Disease
+holdout.vimp.rfsrc      Hold out variable importance (VIMP)
+housing                 Ames Iowa Housing Data
+imbalanced.rfsrc        Imbalanced Two Class Problems
+impute.rfsrc            Impute Only Mode
+max.subtree.rfsrc       Acquire Maximal Subtree Information
+nutrigenomic            Nutrigenomic Study
+partial.rfsrc           Acquire Partial Effect of a Variable
+pbc                     Primary Biliary Cirrhosis (PBC) Data
+plot.competing.risk.rfsrc
+                        Plots for Competing Risks
+plot.quantreg.rfsrc     Plot Quantiles from Quantile Regression Forests
+plot.rfsrc              Plot Error Rate and Variable Importance from a
+                        RF-SRC analysis
+plot.subsample.rfsrc    Plot Subsampled VIMP Confidence Intervals
+plot.survival.rfsrc     Plot of Survival Estimates
+plot.variable.rfsrc     Plot Marginal Effect of Variables
+predict.rfsrc           Prediction for Random Forests for Survival,
+                        Regression, and Classification
+print.rfsrc             Print Summary Output of a RF-SRC Analysis
+quantreg.rfsrc          Quantile Regression Forests
+randomForestSRC-package
+                        Fast Unified Random Forests for Survival,
+                        Regression, and Classification (RF-SRC)
+rfsrc                   Fast Unified Random Forests for Survival,
+                        Regression, and Classification (RF-SRC)
+rfsrc.fast              Fast Random Forests
+rfsrc.news              Show the NEWS file
+stat.split.rfsrc        Acquire Split Statistic Information
+subsample.rfsrc         Subsample Forests for VIMP Confidence Intervals
+synthetic               Synthetic Random Forests
+tune.rfsrc              Tune Random Forest for the optimal mtry and
+                        nodesize parameters
+var.select.rfsrc        Variable Selection
+vdv                     van de Vijver Microarray Breast Cancer
+veteran                 Veteran's Administration Lung Cancer Trial
+vimp.rfsrc              VIMP for Single or Grouped Variables
+wihs                    Women's Interagency HIV Study (WIHS)
+wine                    White Wine Quality Data

@@ -1,0 +1,279 @@
+Package: randomForestSRC
+Version: 2.9.3 (bld20200120)
+
+---------------------------------------------------------------------------------
+FOR BETA BUILDS, DOCUMENTATION, and dual compilation for R and
+  Spark/Java (experimental) please see:
+  https://github.com/kogalur/randomForestSRC
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+CHANGES TO RELEASE 2.9.3
+---------------------------------------------------------------------------------
+Bug fixes: Serious impute() issue introduced in the last build (Bug 59
+on GitHub).  Fix to compile time error on systems that do not support
+OpenMP.  Here, the OpenMP code that was inadvertently exposed is now
+protected when OpenMP support is not detected.  Also updated
+impute.rfsc.Rd with a salient example.
+
+---------------------------------------------------------------------------------
+RELEASE 2.9.2
+---------------------------------------------------------------------------------
+Bug fixes: Fix to Windows 10 OpenMP stack allocation error encountered
+when survival and large n are encountered (Bug 50 on GitHub).  Fix to 
+get.quantile.stat() (Bug 51 on GitHub).
+
+---------------------------------------------------------------------------------
+RELEASE 2.9.1
+---------------------------------------------------------------------------------
+Bug fixes to quantreg and some minor updates to other functions.
+
+---------------------------------------------------------------------------------
+RELEASE 2.9.0
+---------------------------------------------------------------------------------
+Added new splitrules "auc" and "entropy" for classification.
+Improvements to quantile regression.  Updates to holdout vimp.  Some
+function names were changed as a general move towards name uniformity
+in the package.  Updates to function imbalanced used for class
+imbalanced data.
+
+---------------------------------------------------------------------------------
+RELEASE 2.8.0
+---------------------------------------------------------------------------------
+Ensembles in regression now support Greenwald-Khanna approximate
+quantile queries via rfsrc(), predict.rfsrc() and the new wrapper
+quantileReg.rfsrc(). Related to this, a new split rule "quantile.regr"
+has been added.  Specifications will be added to the GitHub page,
+shortly.  Another new wrapper, imbalanced.rfsrc(), implements various
+solutions to the two-class imbalanced problem, including the newly
+proposed quantile-classifier approach of O'Brien and Ishwaran (2017).
+Also includes Breiman's balanced random forests undersampling of the
+majority class.  Performance is assesssed using the G-mean, but
+misclassification error can be requested. Also, the new parameter
+get.tree in predict.rfsrc() allows users to extract the ensembles for
+a single tree or subset of trees over the forest. Finally, the default
+nodesize for survival and competing risk has been changed to 15.
+    
+---------------------------------------------------------------------------------
+RELEASE 2.7.0
+---------------------------------------------------------------------------------
+Three primary additions:
+  (1) Subsample Forests for VIMP Confidence Intervals:
+  Uses subsampling to calculate confidence intervals and standard
+  errors for VIMP (variable importance). Applies to all families.
+  (2) Tune Random Forest for the optimal mtry and nodesize parameters:
+  Finds the optimal mtry and nodesize tuning parameter for a random
+  forest using out-of-bag (OOB) error.  Applies to all families. 
+  (3) Fast approximate random forests:  Uses subsampling with forest options
+  set to encourage computational speed.  Applies to all families.
+
+---------------------------------------------------------------------------------
+RELEASE 2.6.1
+---------------------------------------------------------------------------------
+Fix to predict() call not returning ensembles when y-vars not present.  Sorry
+about that.
+  
+---------------------------------------------------------------------------------
+RELEASE 2.6.0
+---------------------------------------------------------------------------------
+Serious improvements to OpenMP performance after addressing issues
+related to the blocking of threads during a number of calculations
+involving ensembles, importance, forest weights, and partial plots
+mostly in big-n data sets.
+  
+---------------------------------------------------------------------------------
+RELEASE 2.5.1
+---------------------------------------------------------------------------------
+Addition of configure file to source package allowing more accessible OpenMP
+parallel execution on systems that support it.
+  
+---------------------------------------------------------------------------------
+RELEASE 2.5.0
+---------------------------------------------------------------------------------
+Introduction of conditional quantiles for a regression forest.
+Applies to both univariate and multivariate forests.  Can be used for
+both training and testing purposes and returns the conditional
+quantiles for the target outcomes, and conditional density, which can
+be used to calculate conditional moments, such as the mean and
+standard deviation.
+
+---------------------------------------------------------------------------------
+RELEASE 2.4.2
+---------------------------------------------------------------------------------
+Bug fixes to partial.rfsrc() on R and C side.  Allowance of second
+order variable specification in this analysis.  Conditional importance
+values in classification adjusted by a factor of exp(1).  Bug fix to unsafe
+threading in LB-VIMP calculations.
+
+---------------------------------------------------------------------------------
+RELEASE 2.4.1
+---------------------------------------------------------------------------------
+Fix to typedef that breaks Linux.  Sorry about that.
+  
+---------------------------------------------------------------------------------
+RELEASE 2.4.0
+---------------------------------------------------------------------------------
+Fix to custom splitting family verification and registration harness.
+Introduction of bootstrap="by.user".  Fix to incorrect mapping of user
+specified time points to event times when ntime option is used.  It is
+recommended that the use of this option be avoided.  The effect of
+discretizing the time values compromises the ensembles. For best
+results, all event times must be used.  This was and is the default
+behaviour.  Fix to incorrect passing of time option parameter in
+plot.variable().  Introduction of partial.rfsrc() to allow direct
+access to partial ensembles.  Added support for long vectors on native
+code side.
+
+  
+RELEASE 2.3.0
+---------------------------------------------------------------------------------  
+Fix to levels.count when ntree=1.  Some n-based loop optimization.
+Significant improvements in CPU times for restore-predict modes, and
+plot.variable().  Consequent changes to forest object, and
+incompatibility with objects created with previous versions of the
+package.  Default is now importance=FALSE in predict.rfsrc().
+
+RELEASE 2.2.0
+---------------------------------------------------------------------------------
+Bug fix to coerce.factor option via get.xvar.nlevels() and
+get.yvar.nlevels() resolved by sending in max instead of number of
+levels.  Bug fix to VIMP that potentially occurs in OpenMP mode
+causing non-zero LB-VIMP. Methodological fix to in-node imputation.
+and removal of na.random.  Consequent incompatibility with objects
+created with previous versions of the package. Fix to rfsrcSyn() bug
+pertaining to colnames of test set synthetic features. Introduction of
+sampsize, samptype, and case.wt to address imbalanced data sets.
+Continued improvements to CPU and memory performance in big-n, big-p,
+and big-ntree scenarios.
+  
+RELEASE 2.1.0
+---------------------------------------------------------------------------------
+Change to GROW mode default importance=none and to allow importance=TRUE.
+Addition of user trace with time estimates.
+CPU usage - code optimization of ensemble calculations.
+CPU usage - code optimization of imputation. 
+Fix to R-side parsing of ensembles in multivariate classification.
+Change to treat ordered factors under classification setting
+instead of regression.
+    
+---------------------------------------------------------------------------------
+RELEASE 2.0.7
+Fix to factor coercion option in responses.  Fix to R-side processing
+of err.rate and importance in multivariate families with
+classification. Update of OPENMP protocols per CRAN recommendation.
+Expansion of fast.restore option to omit performance on every tree,
+and update to associated Rd file.
+
+---------------------------------------------------------------------------------
+RELEASE 2.0.5  
+Fix to bug in dimensioning of predict object in survival families.
+Added documentation for custom splitting.
+
+---------------------------------------------------------------------------------
+RELEASE 2.0.0
+Multivariate capabilities added. Custom splitting harness
+modifications.  Redefinition of nodesize to allow terminal nodes less
+than said size, subject to the initial test for 2 x nodesize before
+the split, maximum depth, and purity.  Various bug fixes.
+
+RELEASE 1.6.1
+Fix to donttest example in rfsrc.Rd, and other adjustments per
+CRAN packaging protocols.
+
+---------------------------------------------------------------------------------
+RELEASE 1.6.0
+Bug fix to duplicating missingness protocol when restoring a forest.
+Added fast.restore option to grow call.  Change to pass through
+xvar.wt as entered by user. RAM profile reduction in vimp().  Added
+versioning checks of forest object, thanks to suggestions by John
+Ehrlinger.  Bug fix to allow logical responses, treated as reals. User
+trace functionality restored.
+
+---------------------------------------------------------------------------------
+RELEASE 1.5.5
+Bug fix to daughter assignment in classification.  Significant RAM
+optimization in all modes.
+
+---------------------------------------------------------------------------------
+RELEASE 1.5.4
+Addition of new function stat.split() for extracting information from
+tree node splitting-statistics.  Added more functionality to
+rfsrcSyn() for fitting synthetic random forests.
+
+---------------------------------------------------------------------------------
+RELEASE 1.5.3
+Addition of rfsrcSyn() function to grow a synthetic random forest (RF)
+using RF machines as synthetic features.  Applies only to regression
+and classification settings.  Used for prediction only.
+
+---------------------------------------------------------------------------------
+RELEASE 1.5.2
+Fix to non-standard GCC errors and warnings.  Fix to bug in split
+rules related to omission of missing individuals in the split
+statistic.  Minor R-side fixes.
+
+---------------------------------------------------------------------------------
+RELEASE 1.5.1
+Fix to UBSAN warnings.  Implementation of new RG protocols.
+
+---------------------------------------------------------------------------------
+RELEASE 1.5.0
+Significant improvements to CPU and RAM usage profiles in serial and
+OpenMP modes of execution.  Proximity options allow inbag, OOB and all.
+VIMP implements sub-setting and conditional variable importance. NA
+options allow the split statistic to be based on non-missing values
+only.  In addition it allows random assignment of missing values.
+
+---------------------------------------------------------------------------------
+RELEASE 1.4.0
+Modification of terminal node imputation protocol.  We now assign all
+individuals the same value rather than sampling from the distribution.
+Implementation of split.null option.  Implementation of unsupervised
+splitting for missing data in impute.rfsrc().  Modification of nimpute
+> 1 protocols.  In-bag, OOB, and all now depend on the mode.
+Reduction in impute memory footprint.  Modification of proximity
+option to allow in-bag, OOB, and all.  Fixed bug in predict involving
+manual formula calls.  Fixed bug in find.interaction involving
+specifying covariate names.  Changes relating to Undefined Behaviour
+Sanitizer.
+
+---------------------------------------------------------------------------------
+RELEASE 1.3.0
+
+Initial re-engineering of memory footprint for imputation.
+Performance enhancements to split rules.
+
+---------------------------------------------------------------------------------
+RELEASE 1.2.0
+
+Competing risks now implements two distinct splitting rules for
+identifying short term risks affecting the cause-specific hazard or
+long term predictions affecting the cumulative incidence function. The
+plot.variable function now returns, and can reuse, a plot.variable
+data structure object for user convenience. Thanks to John Ehrlinger
+for this improvement. Other minor bug fixes, and enhancements.
+
+---------------------------------------------------------------------------------
+RELEASE 1.1.0
+OpenMP performance enhancements to ensemble and variable importance calculations.
+
+---------------------------------------------------------------------------------
+RELEASE 1.0.2
+Fix to [S] missingness check when all status are non-censored.
+Fix to [S] summary imputation of time.
+Fix to variables used all.trees output.
+Fix to manual formula interface.
+Removed big.data option.
+Added ntime option for survival families.
+
+---------------------------------------------------------------------------------
+RELEASE 1.0.1
+Replaced 'suggests multicore' with 'depends parallel'.  Followed
+protocol in parallel package for controlling number of cores, via
+options(), and environment variables.  Reduced [S] memory footprint by
+prematurely de-allocating terminal node information.
+
+---------------------------------------------------------------------------------
+RELEASE 1.0.0 represents the first release of the
+package.  
+

@@ -1,0 +1,20 @@
+Package: randomForestSRC
+Version: 2.9.3
+Date: 2020-01-20
+Title: Fast Unified Random Forests for Survival, Regression, and
+        Classification (RF-SRC)
+Author: Hemant Ishwaran <hemant.ishwaran@gmail.com>, Udaya B. Kogalur <ubk@kogalur.com>
+Maintainer: Udaya B. Kogalur <ubk@kogalur.com>
+BugReports: https://github.com/kogalur/randomForestSRC/issues/new
+Depends: R (>= 3.5.0),
+Imports: parallel
+Suggests: survival, pec, prodlim, mlbench, akima, caret, imbalance
+Description: Fast OpenMP parallel computing of Breiman's random forests for survival, competing risks, regression and classification based on Ishwaran and Kogalur's popular random survival forests (RSF) package.  Handles missing data and now includes multivariate, unsupervised forests, quantile regression and solutions for class imbalanced data.  New fast interface using subsampling and confidence regions for variable importance.
+License: GPL (>= 3)
+URL: http://web.ccs.miami.edu/~hishwaran http://www.kogalur.com
+        https://github.com/kogalur/randomForestSRC
+NeedsCompilation: yes
+Packaged: 2020-01-21 01:22:09 UTC; kogalur
+Repository: CRAN
+Date/Publication: 2020-01-21 07:50:11 UTC
+Built: R 3.6.2; x86_64-pc-linux-gnu; 2020-02-26 06:19:47 UTC; unix

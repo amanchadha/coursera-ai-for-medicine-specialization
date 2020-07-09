@@ -1,0 +1,58 @@
+citHeader("To cite randomForestSRC in publications use:")
+
+titl <- meta$Title
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry="Manual",
+         title = titl,
+         author = personList(person(family="Ishwaran", given="H."),
+	                     person(family="Kogalur", given="U.B.")),
+	 publisher = "manual",
+         year         = year,
+         note         = vers,
+         url          = "https://cran.r-project.org/package=randomForestSRC",
+         pdf          = "https://cran.r-project.org/web/packages/randomForestSRC/randomForestSRC.pdf",
+         textVersion =
+         paste("Ishwaran H. and Kogalur U.B. (",year ,"). ",
+               titl, ", ", vers, ".", sep=""))
+
+citEntry(entry="Article",
+         title  = "Random survival forests for R",
+         author = personList(person(family="Ishwaran", given="H."),
+	                     person(family="Kogalur", given="U.B.")),
+	 journal      = "R News",
+         year         = "2007",
+         volume       = "7",
+         number       = "2",
+         pages        = "25--31",
+         month        = "October",
+         url          = "https://CRAN.R-project.org/doc/Rnews/",
+         pdf          = "https://CRAN.R-project.org/doc/Rnews/Rnews_2007-2.pdf",
+
+         textVersion =
+         paste("Ishwaran H. and Kogalur U.B. (2007). ",
+               "Random survival forests for R. ",
+               "R News 7(2), 25--31.",
+               sep=""))
+
+citEntry(entry="Article",
+         title  = "Random survival forests",
+         author = personList(person(family="Ishwaran", given="H."),
+	                     person(family="Kogalur", given="U.B."),
+	                     person(family="Blackstone", given="E.H."),
+                             person(family="Lauer", given="M.S.")),
+	 journal      = "Ann. Appl. Statist.",
+         year         = "2008",
+         volume       = "2",
+         number       = "3",
+         pages        = "841--860",
+         url          = "http://arXiv.org/abs/0811.1645v1",
+         pdf          = "http://arxiv.org/pdf/0811.1645",
+
+         textVersion =
+         paste("Ishwaran H., Kogalur U.B., Blackstone E.H. and Lauer M.S. (2008). ",
+               "Random survival forests. ",
+               "Ann. Appl. Statist. 2(3), 841--860.",
+               sep=""))
+

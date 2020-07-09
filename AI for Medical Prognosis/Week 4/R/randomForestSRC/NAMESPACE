@@ -1,0 +1,103 @@
+useDynLib(randomForestSRC, .registration = TRUE)
+
+importFrom("parallel", mclapply)
+importFrom("graphics", "abline", "axis", "box", "boxplot", "bxp",
+           "legend", "lines", "matlines", "matplot", "mtext", "par", "plot",
+           "plot.new", "plot.window", "points", "rug", "segments",
+           "strwidth", "text", "title", "grconvertX", "grconvertY", "plot.default")
+importFrom("stats", "as.dist", "as.formula", "cutree", "dlnorm", "formula",
+           "hclust", "lowess", "median", "model.matrix", "na.omit",
+           "optim", "pgamma", "plnorm", "pnorm", "predict", 
+           "quantile", "qnorm", "runif", "sd", "supsmu", "var", "wilcox.test")
+importFrom("utils", "installed.packages", "txtProgressBar", "setTxtProgressBar",
+           "write.table", "tail")
+importFrom("grDevices", "gray")
+
+export(extract.bootsample,
+       extract.quantile,
+       extract.subsample,
+       find.interaction,
+       find.interaction.rfsrc,
+       get.auc,
+       get.bayes.rule,
+       get.brier.error,       
+       get.cindex,
+       get.confusion,
+       get.misclass.error,
+       get.mv.error,
+       get.mv.error.block,
+       get.mv.formula,
+       get.mv.predicted,
+       get.mv.vimp,
+       get.quantile,
+       get.quantile.crps,
+       get.quantile.stat,
+        
+       holdout.vimp,
+       holdout.vimp.rfsrc,
+       imbalanced,
+       imbalanced.rfsrc,
+       impute,       
+       impute.rfsrc,
+       max.subtree,
+       max.subtree.rfsrc,
+       partial,
+       partial.rfsrc,
+       plot.competing.risk,
+       plot.competing.risk.rfsrc,
+       plot.quantreg,
+       plot.quantreg.rfsrc,
+       plot.rfsrc,
+       plot.subsample,
+       plot.subsample.rfsrc,       
+       plot.survival,
+       plot.survival.rfsrc,
+       plot.variable,
+       plot.variable.rfsrc,       
+       predict.rfsrc,
+       print.rfsrc,
+       quantreg,
+       quantreg.rfsrc,
+       rfsrc,
+       rfsrc.cart,
+       rfsrc.fast,
+       rfsrc.news,
+       synthetic.rfsrc,
+       synthetic,
+        
+       subsample,
+       subsample.rfsrc,
+       stat.split,
+       stat.split.rfsrc,
+       tune,
+       tune.rfsrc,
+       tune.nodesize,
+       tune.nodesize.rfsrc,
+       var.select,
+       var.select.rfsrc,
+       vimp,
+       vimp.rfsrc)
+
+
+S3method(max, subtree)
+S3method(max, subtree.rfsrc)
+
+S3method(plot, competing.risk)
+S3method(plot, competing.risk.rfsrc)
+S3method(plot, quantreg)
+S3method(plot, quantreg.rfsrc)
+S3method(plot, rfsrc)
+S3method(plot, subsample)
+S3method(plot, subsample.rfsrc)
+S3method(plot, survival)
+S3method(plot, survival.rfsrc)
+S3method(plot, variable)
+S3method(plot, variable.rfsrc)
+
+S3method(predict, rfsrc)
+
+S3method(print, rfsrc)
+
+
+
+
