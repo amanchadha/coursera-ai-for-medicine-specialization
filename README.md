@@ -21,21 +21,21 @@ This repo contains my work for this specialization. All the code base, quiz ques
 
 ### Course 1: [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
   
-  - Week 1: [Chest X-Ray Medical Diagnosis with Deep Learning](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Diagnosis/Week%201/C1W1_A1_Chest%20X-Ray%20Medical%20Diagnosis%20with%20Deep%20Learning.ipynb)
-  - Week 2: [Evaluation of Diagnostic Models](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Diagnosis/Week%202/C1W2_A1_Evaluation%20of%20Diagnostic%20Models.ipynb)
-  - Week 3: [Brain Tumor Auto-Segmentation for Magnetic Resonance Imaging (MRI)](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Diagnosis/Week%203/C1M3_A1_Brain%20Tumor%20Auto-Segmentation%20for%20Magnetic%20Resonance%20Imaging.ipynb)
+  - Week 1: [Chest X-Ray Medical Diagnosis with Deep Learning](AI%20for%20Medical%20Diagnosis/Week%201/C1W1_A1_Chest%20X-Ray%20Medical%20Diagnosis%20with%20Deep%20Learning.ipynb)
+  - Week 2: [Evaluation of Diagnostic Models](AI%20for%20Medical%20Diagnosis/Week%202/C1W2_A1_Evaluation%20of%20Diagnostic%20Models.ipynb)
+  - Week 3: [Brain Tumor Auto-Segmentation for Magnetic Resonance Imaging (MRI)](AI%20for%20Medical%20Diagnosis/Week%203/C1M3_A1_Brain%20Tumor%20Auto-Segmentation%20for%20Magnetic%20Resonance%20Imaging.ipynb)
 
 ### Course 2: [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
   
-  - Week 1: [Diagnosing Diseases using Linear Risk Models](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Prognosis/Week%201/C2W1_A1_Build%20and%20Evaluate%20a%20Linear%20Risk%20model.ipynb)
-  - Week 2: [Risk Models Using Machine Learning](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Prognosis/Week%202/C2W2_A1_Risk%20Models%20Using%20Tree-based%20Models.ipynb)
-  - Week 3: [Non-Parametric Estimators for Survival Analysis](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Prognosis/Week%203/C2W3_A1_Survival%20Estimates%20that%20Varies%20with%20Time.ipynb)
-  - Week 4: [Cox Proportional Hazards and Random Survival Forests](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20for%20Medical%20Prognosis/Week%204/C2W4_A1_Cox%20Proportional%20Hazards%20and%20Random%20Survival%20Forests.ipynb)
+  - Week 1: [Diagnosing Diseases using Linear Risk Models](AI%20for%20Medical%20Prognosis/Week%201/C2W1_A1_Build%20and%20Evaluate%20a%20Linear%20Risk%20model.ipynb)
+  - Week 2: [Risk Models Using Machine Learning](AI%20for%20Medical%20Prognosis/Week%202/C2W2_A1_Risk%20Models%20Using%20Tree-based%20Models.ipynb)
+  - Week 3: [Non-Parametric Estimators for Survival Analysis](AI%20for%20Medical%20Prognosis/Week%203/C2W3_A1_Survival%20Estimates%20that%20Varies%20with%20Time.ipynb)
+  - Week 4: [Cox Proportional Hazards and Random Survival Forests](AI%20for%20Medical%20Prognosis/Week%204/C2W4_A1_Cox%20Proportional%20Hazards%20and%20Random%20Survival%20Forests.ipynb)
 
 ### Course 3: [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
-  - Week 1: [Estimating Treatment Effect Using Machine Learning](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20For%20Medical%20Treatment/Week%201/C3W1_A1_Estimating%20Treatment%20Effect%20Using%20Machine%20Learning.ipynb)
-  - Week 2: [Natural Language Entity Extraction](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20For%20Medical%20Treatment/Week%202/C3W2_A1_Natural%20Language%20Entity%20Extraction.ipynb)
-  - Week 3: [ML Interpretation](https://github.com/amanchadha/ai-for-medicine-specialization/blob/master/AI%20For%20Medical%20Treatment/Week%203/C3W3_A1_ML%20Interpretation.ipynb)
+  - Week 1: [Estimating Treatment Effect Using Machine Learning](AI%20For%20Medical%20Treatment/Week%201/C3W1_A1_Estimating%20Treatment%20Effect%20Using%20Machine%20Learning.ipynb)
+  - Week 2: [Natural Language Entity Extraction](AI%20For%20Medical%20Treatment/Week%202/C3W2_A1_Natural%20Language%20Entity%20Extraction.ipynb)
+  - Week 3: [ML Interpretation](AI%20For%20Medical%20Treatment/Week%203/C3W3_A1_ML%20Interpretation.ipynb)
 
 ## Syllabus
 
