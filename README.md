@@ -41,12 +41,12 @@ This repo contains my work for this specialization. All the code base, quiz ques
 
 ### Course 1: AI For Medical Diagnosis
 
-How can AI be applied to medical imaging to diagnose diseases? In this first course, you’ll learn about the nuances of working with both 2D and 3D medical image data, for multi-class classification and image segmentation. You’ll then apply what you’ve learned to classify diseases in x-ray images and segment tumors in 3D MRI brain images. Finally, you’ll learn how to properly evaluate the performance of your models.
+How can AI be applied to medical imaging to diagnose diseases? In this first course, you’ll learn about the nuances of working with both 2D and 3D medical image data, for multi-class classification and image segmentation. You’ll then apply what you’ve learned to classify diseases in X-Ray images and segment tumors in 3D MRI brain images. Finally, you’ll learn how to properly evaluate the performance of your models.
 
 #### Week 1:
 - Introduction: A conversation with Andrew Ng
 - Diagnosis examples
-- Model training on chest x-rays
+- Model training on chest X-Rays
 - Training, prediction, and loss
 - Class imbalance
 - Binary cross entropy loss function
