@@ -1,4 +1,4 @@
-# Coursera AI for Medicine Specialization offered by deeplearning.ai
+# Coursera AI for Medicine Specialization (offered by deeplearning.ai)
 
 Programming assignments, labs and quizzes from all courses in the Coursera [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine) offered by `deeplearning.ai`.
 
