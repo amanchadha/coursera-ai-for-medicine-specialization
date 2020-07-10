@@ -15,7 +15,7 @@ AI is transforming the practice of medicine. It’s helping doctors diagnose pat
 
 ## Credits
 
-This repo contains my work for this specialization. All the code base, quiz questions, screenshot, and images, are taken from, unless specified, [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine).
+This repo contains my work for this specialization. The code base, quiz questions, screenshot, and images, are taken from, unless specified otherwise, [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine).
 
 ## Programming Assignments
 
